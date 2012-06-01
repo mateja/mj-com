@@ -3,11 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html{ background-color:black; padding:0; margin:0;  }
-xbody{background: url( http://dl.dropbox.com/u/49925034/MJ.com/background.jpg ) repeat;}
 body{position: relative;width:800px;display:block;margin:0 auto; height:500px;background: url( http://dl.dropbox.com/u/49925034/MJ.com/big_babi_background.png ) no-repeat;}
+body{position: relative;width:800px;display:block;margin:0 auto; height:500px;background: no-repeat;}
 header img{position:absolute; top:0;left:500px;}
 header{ display: block;}
-nav li,nav li a { display:block; height:75px; width:125px;  }
+nav { float:left; }
+nav li,nav li a { display:block; height:75px; width:125px; }
 nav li { background-image:url(http://dl.dropbox.com/u/49925034/MJ.com/menu.gif);overflow:hidden; }
 nav li a {text-indent:-1000px;}
 .m2{background-position:0 -150px;}
