@@ -1,7 +1,7 @@
 Demo::Application.routes.draw do
 
   match "/contact" => "contact#index"
-  match "/about" => "about#index"
+#  match "/about" => "about#index"
   match "/gallery" => "gallery#index"
 
   root :to => "home#index"
