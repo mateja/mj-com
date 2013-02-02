@@ -1,0 +1,30 @@
+<a href="https://www.facebook.com/pages/Mateja-Jager/249370815177796">
+  <img id="mainImg" src="/assets/mobile320.jpg" alt="Mateja Jager Jewelery"/>
+</a>
+
+
+<script>
+  function mainImg() {
+    var img='';
+    var width = window.innerWidth;
+    if (width <= 320){
+      img='/assets/mobile320.jpg';
+    }
+    else if (width <= 480){
+      img='/assets/mobile480.jpg';
+    }
+    else if(width <= 768){
+      img='/assets/web768.jpg';
+    }
+    else if(width <= 992){
+      img='/assets/web992.jpg';
+    }
+    else {
+      img = '/assets/webvelika.jpg';
+    }
+    $("#mainImg").attr('src', img);
+  }
+
+  $(document).ready(mainImg());
+  $(window).resize(mainImg());
+</script>
